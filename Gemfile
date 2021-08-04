@@ -28,9 +28,14 @@ group :development do
 end
 
 group :test do
+  gem 'rexml'
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'minitest',                 '5.11.3'
+  gem 'minitest-reporters',       '1.3.8'
+  gem 'guard',                    '2.16.2'
+  gem 'guard-minitest',           '2.4.6'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
